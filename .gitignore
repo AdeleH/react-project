@@ -1,0 +1,11 @@
+# Logs
+*.log
+
+# Dependency directory
+node_modules
+bower_components
+
+# Compiled files
+public/fonts/
+public/css/
+public/js/

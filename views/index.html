@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>React Project</title>
+    <link rel="stylesheet" href="/css/main.css"/>
+</head>
+<body>
+
+    <!---------------------- React app ---------------------->
+    <div id="app">{{ html|safe }}</div>
+    <!---------------------- /React app ---------------------->
+
+    <script src="/js/vendor.js"></script>
+    <script src="/js/vendor.bundle.js"></script>
+    <script src="/js/bundle.js"></script>
+
+    <script type="text/javascript">
+    jQuery.noConflict();
+    (function($){
+        $(document).ready(function() {
+
+            /***** Carousel of characters *****/
+            $('#myCarousel').carousel({
+                // stop cycling
+                // interval: 1000
+                interval: false
+            });
+
+            // // To style only <select>s with the selectpicker class
+            // $('.selectpicker').selectpicker();
+        });
+    });
+    </script>
+
+</body>
+</html>
